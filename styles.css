@@ -1,0 +1,393 @@
+:root {
+    --forest-moss: #4D7613;
+    --ash-grey: #A9B5B2;
+    --dim-grey: #5C6D6D;
+    --pacific-blue: #27A7B1;
+    --stormy-teal: #156566;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--forest-moss);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--pacific-blue);
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--pacific-blue) 0%, var(--stormy-teal) 100%);
+    color: #fff;
+    padding: 6rem 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    color: var(--stormy-teal);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+section {
+    padding: 4rem 0;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--forest-moss);
+    text-align: center;
+}
+
+.about {
+    background-color: var(--ash-grey);
+    background-color: rgba(169, 181, 178, 0.1);
+}
+
+.about p {
+    font-size: 1.1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.projects {
+    background-color: #fff;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background-color: rgba(169, 181, 178, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    border-top: 4px solid var(--pacific-blue);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--forest-moss);
+}
+
+.project-card p {
+    color: var(--dim-grey);
+    line-height: 1.6;
+}
+
+.workshop {
+    background-color: rgba(169, 181, 178, 0.1);
+}
+
+.workshop-card {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.workshop-card h3 {
+    font-size: 2rem;
+    color: var(--forest-moss);
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.workshop-details {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.workshop-details p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--dim-grey);
+    line-height: 1.8;
+}
+
+.workshop-details strong {
+    color: var(--stormy-teal);
+    font-weight: 600;
+}
+
+.workshop-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: var(--pacific-blue);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.workshop-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(39, 167, 177, 0.4);
+    background-color: var(--stormy-teal);
+}
+
+.get-involved {
+    background-color: rgba(169, 181, 178, 0.1);
+}
+
+.involvement-list {
+    max-width: 600px;
+    margin: 0 auto;
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+.involvement-list li {
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: #fff;
+    border-left: 4px solid var(--pacific-blue);
+    padding-left: 1.5rem;
+}
+
+.contact {
+    background-color: #fff;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.team {
+    background-color: #fff;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-top: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 4px solid var(--pacific-blue);
+}
+
+.team-member h3 {
+    font-size: 1.25rem;
+    color: var(--forest-moss);
+    font-weight: 600;
+}
+
+footer {
+    background-color: var(--stormy-teal);
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer p:first-child {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-container {
+        width: 100%;
+    }
+
+    .logo-img {
+        height: 40px;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    .team-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    section h2 {
+        font-size: 1.75rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about p {
+        text-align: left;
+    }
+
+    .workshop-card {
+        padding: 2rem;
+    }
+
+    .workshop-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .workshop-details p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 4rem 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.875rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    section {
+        padding: 3rem 0;
+    }
+}
+
